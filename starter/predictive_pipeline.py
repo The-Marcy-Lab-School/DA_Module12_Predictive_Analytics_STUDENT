@@ -19,8 +19,9 @@ import mlflow
 # %% [markdown]
 # ## 1. Load your data
 #
-# Reuse your own established domain dataset — see `../SCENARIOS.md` for
-# a real, verified classification/regression/clustering angle per
+# Reuse your own established domain dataset — this repo's
+# `../data/<domain>/` folder has the real CSVs. See `../SCENARIOS.md`
+# for a real, verified classification/regression/clustering angle per
 # domain.
 
 # %%
