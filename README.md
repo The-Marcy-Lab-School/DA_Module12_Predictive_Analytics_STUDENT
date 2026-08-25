@@ -19,8 +19,10 @@ repo's GitHub page (not "Fork") to create your own copy — see
 
 Reuse your own established Module 3/7/8/9/10/11 domain dataset
 (`finance_insurance`, `healthcare_operations`, `public_sector`, or
-`professional_services`) — see `SCENARIOS.md` for a real, verified
-classification/regression/clustering angle per domain.
+`professional_services`) — this repo's own `data/<domain>/` folder has
+the same real CSVs, no need to go back to your Module 3 repo. See
+`SCENARIOS.md` for a real, verified classification/regression/clustering
+angle per domain.
 
 ## Setup
 
