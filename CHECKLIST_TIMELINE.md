@@ -83,6 +83,18 @@ computed sample size — not a placeholder.
 
 - [ ] Complete `business_memo.md` in full, synthesizing everything above
   — don't re-derive, reference your real numbers.
+- [ ] **Delete `PROJECT_OVERVIEW.md` and `SCENARIOS.md`** — they explain
+  the assignment, not your project; a real portfolio repo shouldn't have
+  "here's what you were asked to build" sitting in it.
+- [ ] **Replace `README.md`'s content with your own real project README**
+  — write it for someone who's never seen this assignment:
+  - **Business Problem** — the real decision your model informs.
+  - **Methodology** — your target, features, and train/test approach.
+  - **Model Performance & Fairness** — your real metric and disparity
+    check.
+  - **Experimental/Causal Analysis** — your A/B design or causal
+    findings.
+  - **Recommendations** — `business_memo.md`'s real final call.
 - [ ] Final commit, repo check.
 
 **Exit criterion**: every section in `required_components.md` has real
