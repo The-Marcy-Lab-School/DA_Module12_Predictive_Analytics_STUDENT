@@ -82,7 +82,14 @@ computed sample size — not a placeholder.
 ## Day 13 — Final memo + submit
 
 - [ ] Complete `business_memo.md` in full, synthesizing everything above
-  — don't re-derive, reference your real numbers.
+  — don't re-derive, reference your real numbers. All 6 sections
+  required: (1) the business/policy question, (2) what the model shows,
+  (3) what the model **can't** claim — correlation vs. causation,
+  explicit, (4) your A/B test design or causal/program-evaluation
+  analysis, (5) your real fairness-check finding and what it implies,
+  (6) a specific, concrete recommendation. Doing the underlying analysis
+  elsewhere doesn't satisfy this — each section must actually appear in
+  the memo itself.
 - [ ] **Delete `PROJECT_OVERVIEW.md` and `SCENARIOS.md`** — they explain
   the assignment, not your project; a real portfolio repo shouldn't have
   "here's what you were asked to build" sitting in it.
