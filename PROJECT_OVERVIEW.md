@@ -29,6 +29,16 @@ what your model actually proves versus what it doesn't.
 **At 3 people**: combine Project Manager and Business Analyst — the
 lightest individual technical load of the four.
 
+**If it's not obvious who takes which role**, don't just default to
+whoever's loudest or most experienced — go around and have each person
+name one role they'd genuinely like to grow in and one they'd rather
+not take on this time, then fill gaps together. No role is "the easy
+one": PM's real work is keeping 3 other people unblocked and on
+schedule, which is its own skill. If two people want the same role,
+it's fine to split *sub*-tasks within it (e.g., co-Experimentation-
+Leads splitting the A/B design and the causal analysis) — say so in
+`team_charter.md` rather than forcing an arbitrary pick.
+
 ## Why this matters
 
 Module 11 taught you to run a real hypothesis test and separate

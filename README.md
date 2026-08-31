@@ -12,6 +12,10 @@ template"** on this repo's GitHub page (not "Fork") to create **one**
 copy for the whole team — see `GETTING_STARTED.md` step 1 for the full
 setup, including adding the rest of the team as collaborators.
 
+**Due:** 14 days, ending in your team's own group readout (Day 14 —
+see `CHECKLIST_TIMELINE.md`, no separate instructor-scheduled session
+this time, this one's yours to present).
+
 - **What/why + roles**: see `PROJECT_OVERVIEW.md`.
 - **Setup, step by step**: see `GETTING_STARTED.md`.
 - **Pacing + full submission checklist**: see `CHECKLIST_TIMELINE.md`.

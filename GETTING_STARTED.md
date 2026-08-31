@@ -76,5 +76,12 @@ clustering → interpretation) is worth more than one final dump. Work on
 feature branches; every merge into `main` needs a real, substantive
 review from a teammate (branch protection enforces this).
 
+**Agree on a real review turnaround as a team** (e.g., "within 24
+hours, or same-day if it's blocking someone") — if your PR sits
+unreviewed past that, ping the team directly rather than silently
+waiting, and any other teammate can review it if the original reviewer
+is unavailable. Branch protection is meant to add safety, not become a
+bottleneck — settle this norm before you need it.
+
 Next: `team_charter.md` to assign real accountability, then
 `CHECKLIST_TIMELINE.md` for pacing and the full submission checklist.

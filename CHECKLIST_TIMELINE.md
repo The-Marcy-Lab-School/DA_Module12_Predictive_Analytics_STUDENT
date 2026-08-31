@@ -1,8 +1,11 @@
 # Recommended Timeline & Submission Checklist
 
 A recommended schedule for this 14-day team project — the
-richest-breadth project so far, now built by a 3-4 person team, so
-pacing and real coordination matter more than usual here.
+richest-breadth project so far, now built by a 3-4 person team. That's
+genuinely a lot of new mechanics at once (roles, a shared repo, branch
+protection, a RACI) on top of real technical breadth — **real setup
+cost on Day 1 is expected, not a sign you're behind.** Every team hits
+a slower first day; the pace picks up once the mechanics are settled.
 
 ## Day 1 — Form the team, roles, repo setup
 
