@@ -1,32 +1,39 @@
-# Above & Beyond: Stretch Scope
+# Above & Beyond: Stretch Scope (team project)
 
-Each item below is optional, and each one previews something Module 13
-(Generative AI, Prompt Engineering & Agentic AI Tooling) or Module 14
-(Responsible AI, AI Governance & Ethics) will assume you already have a
-real feel for.
+The team version's MVP already includes what used to be this project's
+stretch goals (both experimental components, a second model, a second
+fairness segment — see `MVP.md`). Each item below is optional, and each
+one previews something Module 13 (Generative AI, Prompt Engineering &
+Agentic AI Tooling) or Module 14 (Responsible AI, AI Governance &
+Ethics) will assume you already have a real feel for.
 
-## 1. Both experimental components
+## 1. A real regression-adjustment causal check
 
-Complete **both** `starter/ab_test_design_option.md` and
-`starter/causal_program_eval_option.md` in full, not just one. **Why
-this matters next**: Module 14's own governance work assumes you can
-already reason about a decision from multiple validity angles at once,
-not just pick whichever is easier.
+Your MVP causal analysis stratifies by one confounder. Go further: fit
+a real regression model (e.g. logistic regression) predicting your
+outcome from your treatment variable **plus** the confounder(s) as
+covariates, and compare the treatment coefficient with and without the
+adjustment. This is the real technique named as "beyond this project's
+scope" in a well-built causal write-up — controlling for multiple
+covariates at once, not just one stratification. **Why this matters
+next**: Module 14's governance work assumes you can reason about
+confounding at this level, not just a single stratified check.
 
-## 2. A second model, compared for real
+## 2. A real MLflow Model Registry workflow
 
-Fit a second real model (a different algorithm, or a meaningfully
-different feature set) against the same target, and discuss the real
-tradeoff — which one you'd actually ship, and why, given your section 2
-business framing. **Why this matters next**: real MLOps work (Module
-14's `ai-governance` content) routinely compares model versions before
-choosing one for production; this is that judgment call, made for real.
+Register your section-4 model and your section-11 second model in
+MLflow's Model Registry, tag one `staging` and one `production`, and
+show a real query that retrieves "whichever model is currently in
+production" without hardcoding a run ID. **Why this matters next**: real
+MLOps work routinely needs to answer "which model is live right now"
+programmatically, not by remembering a run ID.
 
-## 3. A second fairness check
+## 3. Sample-size sensitivity for your A/B design
 
-Extend your fairness/disparity check (`predictive_pipeline.py` section
-6) to a second real segment variable, and discuss whether the two
-checks tell a consistent story. **Why this matters next**: Module 14's
-own `responsible-ai-bias-fairness` content (this module's own
-`ai_integration_notes` previews it) goes deeper into exactly this kind
-of multi-dimensional fairness auditing.
+Recompute your section-10 sample size at 2-3 different minimum
+detectable effects (e.g. 3pp, 5pp, 8pp) and show how required sample
+size changes. Discuss the real tradeoff: a smaller MDE needs more
+sample (and more calendar time) — what would your team actually
+recommend to a stakeholder who wants results faster? **Why this matters
+next**: real experiment design is rarely a single fixed number — it's a
+negotiation between statistical rigor and business timeline.
