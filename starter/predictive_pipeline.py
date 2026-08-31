@@ -1,11 +1,14 @@
 # %% [markdown]
-# # Predictive Analytics Pipeline
+# # Predictive Analytics Pipeline (team project)
 #
 # Run this file cell-by-cell in VS Code's Jupyter extension. See
-# `../required_components.md` for exactly what each section needs, and
-# `../SCENARIOS.md` to pick your dataset/target. The written synthesis
-# (business framing, causal/A-B-test component, final interpretation)
-# lives in `../business_memo.md` — a separate deliverable, not this file.
+# `../required_components.md` for exactly what each section needs
+# (sections 1-9 core, 10-12 also required for the team version), and
+# `../SCENARIOS.md` to pick your team's one shared dataset/target. The
+# written synthesis (business framing, **both** the A/B design and the
+# causal component, final interpretation) lives in `../business_memo.md`
+# — a separate deliverable, not this file. Real accountability for who
+# owns which section lives in `team_charter.md`.
 
 # %%
 import pandas as pd
@@ -119,3 +122,46 @@ df = None
 # TODO: print coefficients/importances
 # TODO (markdown): what do they mean for the business question in
 # section 2?
+
+# %% [markdown]
+# ## 10. A/B test design: a real, computed sample size
+#
+# `../starter/ab_test_design_option.md` is where the full design lives
+# (business change, control/treatment, threat to validity) — this
+# section is specifically the real, computed sample-size math, using a
+# real baseline rate/variance from your own data, not an assumed one.
+# `pip install statsmodels` if you haven't — `statsmodels.stats.power`
+# has real, standard power-calculation tools; don't hand-derive the
+# formula yourself.
+
+# %%
+# TODO: a real baseline rate (or mean/variance, if your metric is
+# continuous) computed from your own data
+# TODO: state a real minimum detectable effect
+# TODO: a real power calculation (e.g. statsmodels.stats.power.NormalIndPower
+# for a proportion, or the continuous-data equivalent) -- print the
+# required sample size, don't just assert it's "big enough"
+
+# %% [markdown]
+# ## 11. Second model comparison
+#
+# A different real scikit-learn model against the same honest feature
+# set from section 4. Report both metrics and discuss the real
+# tradeoff — not just whichever number is highest.
+
+# %%
+# TODO: fit a second, genuinely different model
+# TODO: compute the same metric as section 5, print both
+# TODO (markdown): which would you actually recommend, and why?
+
+# %% [markdown]
+# ## 12. Second fairness segment
+#
+# Extend section 6's fairness check to a second real segment variable
+# in your data.
+
+# %%
+# TODO: compute the same error-rate check as section 6, for a different
+# real segment variable
+# TODO (markdown): does this second check change your section 6
+# conclusion at all?

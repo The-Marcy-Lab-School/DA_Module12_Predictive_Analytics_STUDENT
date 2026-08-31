@@ -1,9 +1,9 @@
 # Business Memo
 
 Write this as a memo to a real stakeholder, not a lab report. Reuse the
-real numbers from `starter/predictive_pipeline.py` and your chosen
-option (`starter/ab_test_design_option.md` or
-`starter/causal_program_eval_option.md`) — don't re-derive anything
+real numbers from `starter/predictive_pipeline.py` and **both**
+`starter/ab_test_design_option.md` and
+`starter/causal_program_eval_option.md` — don't re-derive anything
 here, synthesize what you already found.
 
 ## 1. The business/policy question
@@ -24,11 +24,13 @@ causes what." This is the single most common mistake on this project
 (`required_components.md`) — don't let a correlational finding read
 like a causal one.
 
-## 4. Your A/B test design or causal analysis
+## 4. Your A/B test design and causal analysis
 
-TODO: summarize your chosen option's real findings — the confounder (or
-the sample-size justification), the threat to validity, and what it
-means for whether this finding is trustworthy.
+TODO: summarize **both** real findings, integrated into one coherent
+read (not two disconnected sections) — the causal check's confounder
+and result, the A/B design's real sample-size number and threat to
+validity, and what together they mean for whether this finding is
+trustworthy enough to act on.
 
 ## 5. Fairness note
 

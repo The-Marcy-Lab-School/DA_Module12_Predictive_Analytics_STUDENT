@@ -1,8 +1,8 @@
-# Option A: A/B Test Design
+# A/B Test Design
 
-Pick this option OR `causal_program_eval_option.md` (not both for MVP —
-see `../ABOVE_AND_BEYOND.md` if you want to do both). Design a real A/B
-test for a real business change relevant to your chosen domain
+**Required, alongside `causal_program_eval_option.md`** — the team
+version requires both, not either/or. Design a real A/B test for a real
+business change relevant to your team's chosen domain
 (`../SCENARIOS.md`) — this is a design document, not something you need
 to actually run.
 
