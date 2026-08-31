@@ -1,29 +1,36 @@
 # Recommended Timeline & Submission Checklist
 
-A recommended schedule for this 13-day project — the richest-breadth
-project so far, so pacing matters more than usual here.
+A recommended schedule for this 14-day team project — the
+richest-breadth project so far, now built by a 3-4 person team, so
+pacing and real coordination matter more than usual here.
 
-## Day 1 — Setup + pick your target
+## Day 1 — Form the team, roles, repo setup
 
-- [ ] `pip install scikit-learn mlflow pandas`; open `LICENSE`, replace
-  `[YOUR NAME]`, commit.
-- [ ] Read `SCENARIOS.md`, pick your domain, target, and either/or
-  component (`ab_test_design_option.md` or `causal_program_eval_option.md`).
-- [ ] Load your real data (section 1).
+- [ ] Team formed (3-4), roles assigned — PM, Technical Lead, Business
+  Analyst, Experimentation Lead (3-person teams: PM+BA combined).
+- [ ] **One shared repo** created (PM), collaborators added, **branch
+  protection on `main`** turned on (require 1 approving review).
+- [ ] `pip install scikit-learn mlflow pandas statsmodels`; open
+  `LICENSE`, list every team member's name, commit.
+- [ ] Read `SCENARIOS.md` together, pick your team's **one** shared
+  domain and target (not four separate ones).
 
-**Exit criterion**: your real data loads, and you've picked a specific
-classification or regression target.
+**Exit criterion**: the team has one repo, one domain, and branch
+protection confirmed on.
 
-## Day 2 — Business framing + train/test split
+## Day 2 — Team charter + business framing + train/test split
 
+- [ ] **`team_charter.md` written** — the real RACI, before any real
+  modeling work.
+- [ ] Load your team's real data (section 1).
 - [ ] Write your business-question framing (section 2) — what you're
   predicting and what real decision it informs.
 - [ ] Real `train_test_split`, done **before** any fitting (section 3).
   - ⚠️ Fitting anything (a scaler, an imputer) on the full dataset
     before splitting is a real leakage mistake — split first.
 
-**Exit criterion**: your split is real and happens before any model
-touches the data.
+**Exit criterion**: a real, filled-in RACI, and your split happens
+before any model touches the data.
 
 ## Days 3-4 — Fit + evaluate
 
@@ -68,28 +75,58 @@ stakeholder in one sentence each.
 **Exit criterion**: your explanation would make sense to someone who's
 never seen a coefficient before.
 
-## Days 10-12 — A/B test design or causal/program-evaluation analysis
+## Days 10-11 — Both experimental/causal components, required
 
-- [ ] Complete your chosen option file in full — every TODO real and
-  specific to your own comparison, not generic.
+- [ ] Complete **both** `ab_test_design_option.md` **and**
+  `causal_program_eval_option.md` in full — every TODO real and
+  specific to your own comparison, not generic. The A/B design needs a
+  **real, computed sample size** (section 10 — `statsmodels.stats.power`,
+  a real baseline from your own data, not an assumed one).
   - ⚠️ Writing up a correlational finding as if it proves causation is
     the #2 mistake on record — this is exactly what this component
     exists to prevent.
+  - ⚠️ Asserting a sample size is "big enough" without a real
+    computation is the team-version equivalent of the same mistake.
 
-**Exit criterion**: a named, specific confounder or a justified,
-computed sample size — not a placeholder.
+**Exit criterion**: a named, specific confounder **and** a real,
+computed sample size — neither is a placeholder.
 
-## Day 13 — Final memo + submit
+## Day 12 — Second model + second fairness segment
+
+- [ ] Second model comparison (section 11) — a different real
+  scikit-learn model, same honest feature set, a real tradeoff
+  discussion.
+- [ ] Second fairness segment (section 12) — section 6's check extended
+  to a different real segment variable.
+
+**Exit criterion**: two real, comparable metric numbers, and a second
+real per-segment disparity check.
+
+## Day 13 — Final memo, real PR review
 
 - [ ] Complete `business_memo.md` in full, synthesizing everything above
   — don't re-derive, reference your real numbers. All 6 sections
   required: (1) the business/policy question, (2) what the model shows,
   (3) what the model **can't** claim — correlation vs. causation,
-  explicit, (4) your A/B test design or causal/program-evaluation
-  analysis, (5) your real fairness-check finding and what it implies,
+  explicit, (4) **both** your A/B test design and causal analysis,
+  integrated, (5) your real fairness-check finding and what it implies,
   (6) a specific, concrete recommendation. Doing the underlying analysis
   elsewhere doesn't satisfy this — each section must actually appear in
   the memo itself.
+- [ ] Every feature branch merged only after a real, substantive review
+  from a teammate — ≥2 real comments given, by ≥2 different team
+  members, ≥2 received and incorporated.
+- [ ] Each member's own `individual_reflection_<name>.md` filled in.
+
+**Exit criterion**: every section in `required_components.md` has real
+content, no placeholder `# TODO` text left.
+
+## Day 14 — Group readout, submit
+
+- [ ] **Group readout presentation**: PM opens with scope/timeline, Tech
+  Lead covers the model/pipeline, Business Analyst covers findings and
+  the recommendation, Experimentation Lead covers the A/B design and
+  causal analysis. Each person fields Q&A on their own piece.
 - [ ] **Delete `PROJECT_OVERVIEW.md` and `SCENARIOS.md`** — they explain
   the assignment, not your project; a real portfolio repo shouldn't have
   "here's what you were asked to build" sitting in it.
@@ -99,23 +136,14 @@ computed sample size — not a placeholder.
   - **Methodology** — your target, features, and train/test approach.
   - **Model Performance & Fairness** — your real metric and disparity
     check.
-  - **Experimental/Causal Analysis** — your A/B design or causal
+  - **Experimental/Causal Analysis** — your A/B design and causal
     findings.
   - **Recommendations** — `business_memo.md`'s real final call.
+  - **Team & Roles** — who owned what, linking back to your real RACI.
 - [ ] Final commit, repo check.
+- [ ] **Non-PM members**: fork the finished repo to your own GitHub
+  before the deadline, so it's part of your own portfolio too.
 
-**Exit criterion**: every section in `required_components.md` has real
-content, no placeholder `# TODO` text left.
-
-**Heads up**: after this project is due, there's a peer share-out
-session on your actual model and findings — details in class.
-
----
-
-## Above & Beyond (delta only — see `ABOVE_AND_BEYOND.md` for full detail)
-
-- [ ] Complete **both** the A/B test design and the causal/program-
-  evaluation analysis, not just one.
-- [ ] Fit a second model (different algorithm or feature set) and
-  discuss the real tradeoff against your first.
-- [ ] Extend the fairness check to a second segment variable.
+**Heads up**: after this project is due, there's a group readout session
+on your actual model and findings — see above, not an informal peer
+share-out this time.

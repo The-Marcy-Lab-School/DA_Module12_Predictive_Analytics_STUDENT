@@ -1,10 +1,10 @@
-# Option B: Causal / Program-Evaluation Analysis
+# Causal / Program-Evaluation Analysis
 
-Pick this option OR `ab_test_design_option.md` (not both for MVP — see
-`../ABOVE_AND_BEYOND.md` if you want to do both). Analyze a real causal
-question in your chosen domain (`../SCENARIOS.md`) using data you
-already have — no new experiment to run, just a disciplined causal
-analysis of what you can already observe.
+**Required, alongside `ab_test_design_option.md`** — the team version
+requires both, not either/or. Analyze a real causal question in your
+team's chosen domain (`../SCENARIOS.md`) using data you already have —
+no new experiment to run, just a disciplined causal analysis of what you
+can already observe.
 
 ## 1. The policy/business question
 
