@@ -16,13 +16,13 @@ specific to your own domain.
 
 TODO: distinguish, explicitly, what a correlational finding in your
 data would show from what an actual causal claim would require. Reuse
-Module 11's own causal-reasoning discipline here.
+Module 5's own causal-reasoning discipline here.
 
 ## 3. A real, named confounder
 
 TODO: name a specific, plausible confounder for your comparison (not a
 generic "other factors could matter" — a real, specific alternative
-explanation, grounded in your actual data, the way Module 11's own
+explanation, grounded in your actual data, the way Module 5's own
 solution grounded `community_number` in real, checked evidence).
 
 ## 4. What design addresses it

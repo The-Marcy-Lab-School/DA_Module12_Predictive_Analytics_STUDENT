@@ -20,7 +20,7 @@ group? A real A/B test changes **one thing** — name it precisely.
 ## 3. Primary metric
 
 TODO: what's the one real metric you'd measure to judge success? (Reuse
-Module 11's own hypothesis-testing instincts here — this should be a
+Module 5's own hypothesis-testing instincts here — this should be a
 metric you could actually run a real test on.)
 
 ## 4. Minimum detectable effect and sample size
@@ -28,7 +28,7 @@ metric you could actually run a real test on.)
 TODO: state the smallest real-world effect size that would actually be
 worth acting on, then compute (don't just assert) a real required
 sample size for that effect at a stated significance level and power —
-reuse Module 11's own sample-size/power reasoning
+reuse Module 5's own sample-size/power reasoning
 (`sample_size_power_scenario.md` from that project, and
 `predictive_pipeline.py`'s own real data, if it gives you a real
 baseline rate/variance to plug in).
