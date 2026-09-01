@@ -1,6 +1,6 @@
 # Scenarios: Real, Verified Modeling Angles Per Domain
 
-Use your own already-established Module 3/7/8/9/10/11 domain — this
+Use your own already-established Module 3/5/8/9/10/11 domain — this
 repo's own `data/<domain>/` folder has the same real CSVs from Module
 3, so there's no need to go back to that repo. Every angle below was
 independently run against the real data before being written here, not

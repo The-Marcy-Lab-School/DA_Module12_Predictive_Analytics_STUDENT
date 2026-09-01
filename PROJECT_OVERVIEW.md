@@ -41,7 +41,7 @@ Leads splitting the A/B design and the causal analysis) — say so in
 
 ## Why this matters
 
-Module 11 taught you to run a real hypothesis test and separate
+Module 5 taught you to run a real hypothesis test and separate
 statistical significance from practical significance. This project asks
 the natural next question: once you can *predict* something, does that
 mean you understand *why* it happens — and is your model actually fair
@@ -49,18 +49,18 @@ to the people it affects? A model that predicts well but can't
 distinguish correlation from causation, or one that's never checked for
 disparate impact, is a real, common way predictive analytics goes wrong
 in practice. It's also this program's second team project — the same
-named-role, real-accountability shape as Module 8, applied to an
+named-role, real-accountability shape as Module 9, applied to an
 analytics team instead of an engineering one.
 
 ## What you'll build on
 
-- Module 11's hypothesis-testing, effect-size, and causal-reasoning
+- Module 5's hypothesis-testing, effect-size, and causal-reasoning
   instincts — directly reused in both your A/B test design and your
   causal write-up.
 - Module 2's descriptive-statistics habits — justifying a modeling
   choice (e.g. "this outcome is skewed, so I'm evaluating with median
   error, not just mean").
-- Module 8's team-project mechanics — branch protection, real PR review
+- Module 9's team-project mechanics — branch protection, real PR review
   across the whole team, individual accountability via a real RACI.
 - Your team's one chosen domain dataset, from every project since
   Module 3.
