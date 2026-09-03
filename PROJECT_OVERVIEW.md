@@ -49,7 +49,7 @@ to the people it affects? A model that predicts well but can't
 distinguish correlation from causation, or one that's never checked for
 disparate impact, is a real, common way predictive analytics goes wrong
 in practice. It's also this program's second team project — the same
-named-role, real-accountability shape as Module 9, applied to an
+named-role, real-accountability shape as Module 8, applied to an
 analytics team instead of an engineering one.
 
 ## What you'll build on
@@ -60,7 +60,7 @@ analytics team instead of an engineering one.
 - Module 2's descriptive-statistics habits — justifying a modeling
   choice (e.g. "this outcome is skewed, so I'm evaluating with median
   error, not just mean").
-- Module 9's team-project mechanics — branch protection, real PR review
+- Module 8's team-project mechanics — branch protection, real PR review
   across the whole team, individual accountability via a real RACI.
 - Your team's one chosen domain dataset, from every project since
   Module 3.
