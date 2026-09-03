@@ -1,4 +1,4 @@
-# Module 12: Predictive Analytics, Machine Learning & Experimentation
+# Module 11: Predictive Analytics, Machine Learning & Experimentation
 
 **This is a team project — 3-4 students, one shared repo.** A real
 end-to-end scikit-learn predictive pipeline, a real fairness check, real
@@ -24,7 +24,7 @@ this time, this one's yours to present).
 
 ## Dataset — your team picks one
 
-Each of you has your own established Module 3/5/8/9/10/11 domain from
+Each of you has your own established Module 3/5/7/8/9/10 domain from
 earlier in the program — likely **different** domains across the team.
 This project needs **one shared dataset**, not four. Pick one member's
 domain (`finance_insurance`, `healthcare_operations`, `public_sector`,
