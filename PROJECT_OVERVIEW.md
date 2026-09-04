@@ -68,7 +68,7 @@ analytics team instead of an engineering one.
 ## What this unlocks
 
 `machine-learning` and `scikit-learn` are explicit prerequisites for
-Module 14 (Responsible AI, AI Governance & Ethics) — this project's own
+Module 12 (Generative & Responsible AI) — this project's own
 fairness-check requirement is a direct, hands-on preview of that
 module's formal bias/fairness content.
 
